@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Study Assistant", page_icon="📚", layout="wi
 st.title("📚 AI Study Assistant")
 st.write("Upload notes and generate summaries, key points, and quiz questions.")
 
-# Correct pipeline
+# pipeline
 summarizer = pipeline("text-generation", model="google/flan-t5-base")
 
 uploaded_file = st.file_uploader("Upload your notes (PDF or TXT)")
